@@ -1,0 +1,55 @@
+Question 1) general function called and where called from 
+
+Assuming given dataframe x and series y 
+
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.7)
+
+Qn 2) 
+
+cross validation 
+- repeat 5 train test split times 
+not correct, cause will have overlapping 
+
+Qn 3) 
+visuallly 5 fold cross validation 
+- take any one row data set 
+- how many times this row to fit this row - 4 times 
+- how many times used to validate the model  - validates once 
+
+Once. To prevent duplicated effect of the other groups of train/test data. 
+
+Qn4) 
+
+common pract to split in train and test 
+- given doing this, why do we cont to do cross validation in the train set 
+answer 
+- cause even though it is randomly taken out into test and train, we want to nullify the effect that the data sets might have some relationship 
+
+in extreme case of cross validation as they are in the rows of the data set 
+- what is it called? 
+and why ?
+Ans --> Leave one out cross validation (LOOCV)
+
+
+Bias variance 
+
+1) fit linear regression with only square footage 
+- underfit cause it will have high bias and low variance. need more variables 
+
+2) low variance and high bias, not possible to reduce bias for linear regresison? 
+not true. 
+
+can transform power 
+can add more variables 
+
+
+3) sum of squared error reduces in three terms, what are they? 
+
+bias - 
+variance 
+irreducible error - error cause by noise in the data that cannot be removed 
+
+4) Bias-var tradeoff
+
+y = error and x axis ->> model complexity
+

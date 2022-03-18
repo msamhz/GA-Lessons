@@ -1,0 +1,29 @@
+Question 1: sample of 80 individuals, 99% confidence level, 166.2 - 182
+True or false? 
+
+99% probability men lies on in the range? 
+
+Answer: False, it only tells us out of 
+conf interval - parameter u want to estimate: mean average height 
+means -> repeat 100 times, one of them will not contain the true mean 
+
+
+Qn2: height 15 men and women
+t - test 
+p value = 0.031 
+
+True or false 
+p(men have different height) is 0.031
+
+Answer: False
+
+What is the null hypo in this case? 
+your assertion --> difference of the means test -- of the women and men 
+
+qn3: Could i reject the null hypo at 99% confidence level? 
+what about the 99% confidence level? 
+
+can reject at 99% but cannot at 95%.
+
+p-value 0.03 > 0.01 -->> can reject
+p-value 0.03 < 0.05 -->> cannot reject 
