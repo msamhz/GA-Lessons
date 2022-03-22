@@ -5,3 +5,12 @@ talk about how you can put your domain knowledge into data science methods
 talk about how previous job may be something bad
 --> use this to say as if you use GA as something positive 
 
+elevator pitch
+
+Driven by thirst for sheer problem-solving and motivated by growth, my passion to tell a story through data via tool manufacturing issue became more prevalent. Not only did I self-learn Python, I proceeded to further hone these skills on data analysis and deep-learning with General Assembly. I truly believe from a fast-paced environment and being quick on foot places me in an advantage to pick up new knowledge fast and apply my skills practically creatively in real-world scenarios, aligning well with my interest in the data science industry. 
+
+
+strength 
+- troubleshooting and critical thinking to solve chronic problems 
+- data driven to prove solutions and convince 
+- cost driven
