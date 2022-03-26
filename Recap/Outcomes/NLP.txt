@@ -1,0 +1,7 @@
+https://www.mygreatlearning.com/blog/multinomial-naive-bayes-explained/
+
+Naive bayes is based on bAyes theorem 
+
+naive says that features are mutually independent
+
+uses bag of words model - does not care about semantics 
