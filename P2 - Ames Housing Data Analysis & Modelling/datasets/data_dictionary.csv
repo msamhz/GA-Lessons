@@ -1,0 +1,82 @@
+Column name,Variable type,Col dtype (initial),Col dtype (converted to),Col dtype (final),Needs one-hot encoding,Possible unique values,Unique values in train,Rows of missing data,Description
+Id,discrete,float,,float,no,,,0,Observation number.
+PID,nominal,float,,float,no,,,0,Parcel identification number.
+MS SubClass,nominal,float,,float,yes,16,16,0,Identifies the type of dwelling involved in the sale.
+MS Zoning,nominal,object,,object,yes,8,7,0,Identifies the general zoning classification of the sale.
+Lot Frontage,continuous,float,,float,no,,,330,Linear feet of street connected to property.
+Lot Area,continuous,float,,float,no,,,0,Lot size in square feet.
+Street,nominal,object,,object,yes,2,2,0,Type of road access to property.
+Alley,nominal,object,,object,yes,3,3,0,Type of alley access to property.
+Lot Shape,ordinal,object,float,float,no,4,4,0,"General shape of property. 'Reg' = 4, 'IR1' = 3, 'IR2' = 2, 'IR3' = 1."
+Land Contour,nominal,object,,object,yes,4,4,0,Flatness of the property.
+Utilities,ordinal,object,float,float,no,4,3,0,"Type of utilities available. 'AllPub' = 4, 'NoSewr' = 3, 'NoSeWa' = 2, 'ELO' = 1."
+Lot Config,nominal,object,,object,yes,5,5,0,Lot configuration.
+Land Slope,ordinal,object,float,float,no,3,3,0,"Slope of property. 'Gtl' = 3, 'Mod' = 2, 'Sev' = 1."
+Neighborhood,nominal,object,,object,yes,28,28,0,Physical locations within Ames city limits (map available).
+Condition 1,nominal,object,,object,yes,9,9,0,Proximity to various conditions.
+Condition 2,nominal,object,,object,yes,9,8,0,Proximity to various conditions (if more than one is present).
+Bldg Type,nominal,object,,object,yes,5,5,0,Type of dwelling.
+House Style,nominal,object,,object,yes,8,8,0,Style of dwelling.
+Overall Qual,ordinal,float,,float,no,,,0,Rates the overall material and finish of the house.
+Overall Cond,ordinal,float,,float,no,,,0,Rates the overall condition of the house.
+Year Built,discrete,float,,float,no,,,0,Original construction date.
+Year Remod/Add,discrete,float,,float,no,,,0,Remodel date (same as construction date if no remodeling or additions).
+Roof Style,nominal,object,,object,yes,6,6,0,Type of roof.
+Roof Matl,nominal,object,,object,yes,8,6,0,Roof material.
+Exterior 1st,nominal,object,,object,yes,17,15,0,Exterior covering on house.
+Exterior 2nd,nominal,object,,object,yes,17,15,0,Exterior covering on house (if more than one material).
+Mas Vnr Type,nominal,object,,object,yes,5,4,22,Masonry veneer type.
+Mas Vnr Area,continuous,float,,float,no,,,22,Masonry veneer area in square feet.
+Exter Qual,ordinal,object,float,float,no,5,4,0,"Evaluates the quality of the material on the exterior. 'Ex' = 5, 'Gd' = 4, 'TA' = 3, 'Fa' = 2, 'Po' = 1."
+Exter Cond,ordinal,object,float,float,no,5,5,0,"Evaluates the present condition of the material on the exterior. 'Ex' = 5, 'Gd' = 4, 'TA' = 3, 'Fa' = 2, 'Po' = 1."
+Foundation,nominal,object,,object,yes,6,6,0,Type of foundation.
+Bsmt Qual,ordinal,object,float,float,no,6,6,1,"Evaluates the height of the basement. 'Ex' = 5, 'Gd' = 4, 'TA' = 3, 'Fa' = 2, 'Po' = 1, 'NA' = 0."
+Bsmt Cond,ordinal,object,float,float,no,6,6,1,"Evaluates the general condition of the basement. 'Ex' = 5, 'Gd' = 4, 'TA' = 3, 'Fa' = 2, 'Po' = 1, 'NA' = 0."
+Bsmt Exposure,ordinal,object,float,float,no,5,5,4,"Refers to walkout or garden level walls. 'Gd' = 4, 'Av' = 3, 'Mn' = 2, 'No' = 1, 'NA' = 0."
+BsmtFin Type 1,ordinal,object,float,float,no,7,7,1,"Rating of basement finished area. 'GLQ' = 6, 'ALQ' = 5, 'BLQ' = 4, 'Rec' = 3, 'LwQ' = 2, 'Unf' = 1, 'NA' = 0."
+BsmtFin SF 1,continuous,float,,float,no,,,1,Type 1 finished square feet.
+BsmtFin Type 2,ordinal,object,float,float,no,7,7,2,"Rating of basement finished area (if multiple types). 'GLQ' = 6, 'ALQ' = 5, 'BLQ' = 4, 'Rec' = 3, 'LwQ' = 2, 'Unf' = 1, 'NA' = 0."
+BsmtFin SF 2,continuous,float,,float,no,,,1,Type 2 finished square feet.
+Bsmt Unf SF,continuous,float,,float,no,,,1,Unfinished square feet of basement area.
+Total Bsmt SF,continuous,float,,float,no,,,1,Total square feet of basement area.
+Heating,nominal,object,,object,yes,6,5,0,Type of heating.
+Heating QC,ordinal,object,float,float,no,5,5,0,"Heating quality and condition. 'Ex' = 5, 'Gd' = 4, 'TA' = 3, 'Fa' = 2, 'Po' = 1."
+Central Air,nominal,object,float,float,no,2,2,0,"Central air conditioning. 'Y' = 1, 'N' = 0."
+Electrical,ordinal,object,float,float,no,5,5,0,"Electrical system. 'SBrkr' = 5, 'FuseA' = 4, 'FuseF' = 3, 'FuseP' = 2, 'Mix' = 1."
+1st Flr SF,continuous,float,,float,no,,,0,First Floor square feet.
+2nd Flr SF,continuous,float,,float,no,,,0,Second floor square feet.
+Low Qual Fin SF,continuous,float,,float,no,,,0,Low quality finished square feet (all floors).
+Gr Liv Area,continuous,float,,float,no,,,0,Above grade (ground) living area square feet.
+Bsmt Full Bath,discrete,float,,float,no,,,2,Basement full bathrooms.
+Bsmt Half Bath,discrete,float,,float,no,,,2,Basement half bathrooms.
+Full Bath,discrete,float,,float,no,,,0,Full bathrooms above grade.
+Half Bath,discrete,float,,float,no,,,0,Half baths above grade.
+Bedroom AbvGr,discrete,float,,float,no,,,0,Bedrooms above grade (does NOT include basement bedrooms).
+Kitchen AbvGr,discrete,float,,float,no,,,0,Kitchens above grade.
+Kitchen Qual,ordinal,object,float,float,no,5,4,0,"Kitchen quality. 'Ex' = 5, 'Gd' = 4, 'TA' = 3, 'Fa' = 2, 'Po' = 1."
+TotRms AbvGrd,discrete,float,,float,no,,,0,Total rooms above grade (does not include bathrooms).
+Functional,ordinal,object,float,float,no,8,8,0,"Home functionality (Assume typical unless deductions are warranted). 'Typ' = 8, 'Min1' = 7, 'Min2' = 6, 'Mod' = 5, 'Maj1' = 4, 'Maj2' = 3, 'Sev' = 2, 'Sal' = 1."
+Fireplaces,discrete,float,,float,no,,,0,Number of fireplaces.
+Fireplace Qu,ordinal,object,float,float,no,6,6,0,"Fireplace quality. 'Ex' = 5, 'Gd' = 4, 'TA' = 3, 'Fa' = 2, 'Po' = 1, 'NA' = 0."
+Garage Type,nominal,object,,object,yes,7,7,0,Garage location.
+Garage Yr Blt,discrete,float,,float,no,,,114,Year garage was built.
+Garage Finish,ordinal,object,float,float,no,4,4,1,"Interior finish of the garage. 'Fin' = 3, 'RFn' = 2, 'Unf' = 1, 'NA' = 0."
+Garage Cars,discrete,float,,float,no,,,1,Size of garage in car capacity.
+Garage Area,continuous,float,,float,no,,,1,Size of garage in square feet.
+Garage Qual,ordinal,object,float,float,no,6,6,1,"Garage quality. 'Ex' = 5, 'Gd' = 4, 'TA' = 3, 'Fa' = 2, 'Po' = 1, 'NA' = 0."
+Garage Cond,ordinal,object,float,float,no,6,6,1,"Garage condition. 'Ex' = 5, 'Gd' = 4, 'TA' = 3, 'Fa' = 2, 'Po' = 1, 'NA' = 0."
+Paved Drive,ordinal,object,float,float,no,3,3,0,"Paved driveway. 'Y' = 3, 'P' = 2, 'N' = 1."
+Wood Deck SF,continuous,float,,float,no,,,0,Wood deck area in square feet.
+Open Porch SF,continuous,float,,float,no,,,0,Open porch area in square feet.
+Enclosed Porch,continuous,float,,float,no,,,0,Enclosed porch area in square feet.
+3Ssn Porch,continuous,float,,float,no,,,0,Three season porch area in square feet.
+Screen Porch,continuous,float,,float,no,,,0,Screen porch area in square feet.
+Pool Area,continuous,float,,float,no,,,0,Pool area in square feet.
+Pool QC,ordinal,object,float,float,no,5,5,0,"Pool quality. 'Ex' = 4, 'Gd' = 3, 'TA' = 2, 'Fa' = 1, 'NA' = 0."
+Fence,ordinal,object,float,float,no,5,5,0,"Fence quality. 'GdPrv' = 4, 'MnPrv' = 3, 'GdWo' = 2, 'MnWw' = 1, 'NA' = 0."
+Misc Feature,nominal,object,,object,yes,6,6,0,Miscellaneous feature not covered in other categories.
+Misc Val,continuous,float,,float,no,,,0,$Value of miscellaneous feature.
+Mo Sold,discrete,float,,float,no,,,0,Month Sold (MM).
+Yr Sold,discrete,float,,float,no,,,0,Year Sold (YYYY).
+Sale Type,nominal,object,,object,yes,10,9,0,Type of sale.
+SalePrice,continuous,float,,float,no,,,0,Sale price $$.
