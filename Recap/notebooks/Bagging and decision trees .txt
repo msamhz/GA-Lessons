@@ -1,0 +1,38 @@
+what is a node in decision tree 
+- root 
+
+what is the node with no children
+- parent
+
+what is the method to split the decision tree called 
+- Gini Impurity
+
+there are four clasess - hundred observations - 25 observations in each class 
+- compute in qn 3, 
+100 randomly assign to 25 each, 
+
+1 - 4(1/4)^2 
+
+
+
+where do decision trees lies in the bias variance trade off 
+- high variance 
+
+
+name two options in sklearn to control issue identified in the previous qn. 
+
+Bagging classifier - max depth, min sample split - prevent you from splitting too much, min sample leaf 
+
+in one sentence summarise what is ensemble method is? 
+- creating several models and combining them 
+
+the word bagging is short for two other words 
+
+1) Bootstrapping -> sampling with replacement for initial sample 
+2) Aggregate - ensemble 
+
+The bagging classifier reduces the probability 
+- please explain how the probability is being computed
+
+- by using Beta number of samples, we take the average amongst them for each row, giving the probability of each. 
+- probability across trees, if there are 50 out of 100, then probability is 0.5 
