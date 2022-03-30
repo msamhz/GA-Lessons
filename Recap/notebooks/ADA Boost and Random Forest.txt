@@ -1,0 +1,34 @@
+what is the key difference between a sequence of bag of trees and the random forest classifier
+-->> random forest is random, trees are independent 
+-- selected features are random 
+-- how many -- sqrt of total number of features 
+
+# 1000 trees each, is it the same as 5000 trees in total 
+-->> yes because sequence doesnt matter - bootstrap, order no difference.
+
+if i combine the results from 5 ADAboost with a 1000 classifiers, is that the same as 5000 trees
+--> Different
+--> ADA boost depends on the previous tree, its weight, there is no guarantee the next tree is more accurate. 
+--> Boosting generally harder to tune 
+
+
+i have ada boost aclassifier 
+5th trees score 0.6  - calc the weight of this tree in aggregation of all of the trees 
+--> 0.5 * np.log((1-error)/error)
+
+
+True or False
+- when we build, on ADA, each of the trees is trained on the bootstrap resample of the original data. 
+FAlse -> use the full data without resampling 
+
+Qn. the ada boost can be run in parallel on several cloud 
+--> False, ADA boost is an sequential order.  
+
+fitting ADA boost classifier --> my first is 0.3, 28th tree miscalc 0.01, which tree will contribute more to final score
+0.3 as more accurate will have more weight,  the lower miscalc will have more weight 
+
+process on ADA, misclassified 5 rows in data set, next round, what should happen to each of these rows when next classifier is build
+-> the weight in the next round will increase
+
+
+ 
