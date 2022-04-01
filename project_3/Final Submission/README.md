@@ -115,7 +115,7 @@ After refining data, ROC_AUC and accuracy increased by 3.5% and 6% respectively.
 
 Logistic regression has the highest ROC_AUC and Accuracy score. 
 
-![image](https://user-images.githubusercontent.com/98629542/161172653-ccb20343-649f-4600-9ec8-6ffc81b0a4ab.png)
+![image](https://user-images.githubusercontent.com/98629542/161173902-df716e51-e3a6-4dca-8b23-39ef58c005b0.png)
 
 **Citations**
 <br>
