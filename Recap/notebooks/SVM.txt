@@ -1,0 +1,51 @@
+the simplest kind of svm - maximal margin classifier
+- strict assumption
+- What is the assumption? 
+- technical term - data is linearly separable 
+
+Answer -  The margin should be as large as possible. 
+The support vectors are the most useful data points because they are the ones most likely 
+to be incorrectly classified.
+
+suffer from heart attack, age and bmi as variables 
+- draw two diagrams 
+- one -> assumption holds
+- found seperating hyperplane that separates the two classes. 
+- maximal margin is described as the the maximum distance from both sides of the hyperplane that 
+separates the two classes
+
+- two -> assumption fails 
+
+
+
+
+diagram 
+- draw maximal margin classifier 
+
+- looking at when the assumption fails, why margin classifier cannot work 
+Answer-->> Because it was not able to separate 
+
+
+- what assumption relaxed in the soft margin classifier 
+Answer ->> slack variable, measuring the distance from each 'wrongly classified' points
+from the intended margin. 
+
+
+
+Diagram where assumption holds 
+- drawn maximal margin classifier
+- take the margin and shift it, with smaller instead
+- what is the problem 
+Answer -->> The classifier will be too tight on either ends of the 
+
+
+Question
+Even for the soft margin, thre are some incident where it may fail 
+
+Can plot the two class circling 
+- in this case what can you do? 
+
+Answer - Apply kernel trick and and warp the data points through another dimension such
+a hyperplace is able to achieve maximal margin between the two. 
+
+
