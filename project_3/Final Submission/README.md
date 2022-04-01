@@ -119,7 +119,7 @@ Logistic regression has the highest ROC_AUC and Accuracy score.
 <br>
 <sup>3</sup>https://www.insider.com/how-fireworks-affect-you-from-increased-anxiety-and-memory-problems-2020-7#:~:text=Repetitive%20fireworks%20launched%20at%20night,can%20weaken%20your%20immune%20system.
 <br>
-<sup>=4</sup>https://wgntv.com/news/fireworks-retailer-warns-of-july-4-shortage-here-are-the-states-where-its-legal-to-stock-up/
+<sup>4</sup>https://wgntv.com/news/fireworks-retailer-warns-of-july-4-shortage-here-are-the-states-where-its-legal-to-stock-up/
 
 
 Conclusion and recommendation
