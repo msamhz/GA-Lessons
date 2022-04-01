@@ -73,13 +73,27 @@ Distinguishing between the two accurately will be key in helping provide early t
 ## Significant findings
 
 Through EDA, I have highlighted on the signficant difference in subrreddict activity levels, where there were orginally 93 users who post in both subreddits suggesting that we may consider removing their post as they might bring ambiguity and inaccruacy as to whether users actually has PTSD or not. Users in r/PTSD generally do post longer text, with longer word count, and are not as active as compared to users fromr/Anxiety.
-In addition, we do observe there is cyclical trend, which suggest that there might be effects from SAD, that only affects people when there is lesser sunlight. Furthermore, through EDA on the common words, I did not find any distinguishing words that is able to differentiate subreddits if searched in the whole data set. But when split by subreddit groups, r/PTSD has `Therapy` singled out, unique for PTSD. It could imply users might need to go for therapy as often as compared to people with Anxiety.
+
+--
+
+In addition, we do observe there is cyclical trend, which suggest that there might be effects from SAD, that only affects people when there is lesser sunlight. Further works can be done to deep dive into other areas that may have attributed to this seasonal effects.  
+
+![image](https://user-images.githubusercontent.com/98629542/161173397-956a4cf8-1dde-47e0-8d60-a08c526f592b.png)
+
+--
+Furthermore, through EDA on the common words, I did not find any distinguishing words that is able to differentiate subreddits if searched in the whole data set. But when split by subreddit groups, r/PTSD has `Therapy` singled out, unique for PTSD. It could imply users might need to go for therapy as often as compared to people with Anxiety.
+
+
 From r/Anxiety, common words like `panic` and `attack` are common symtoms from people having Anxiety. It is peculiar that users in r/PTSD do not experience this as a common effect. For bigrams and trigrams, `panic attack` were found in both subreddits and `sexual assault` were identified in r/PTSD as probably one of the common causes of users with PTSD. I did observe that `years ago` as top common words in bigram illustrating a long term time effect, suggesting it might take longer to overcome it as compared to r/Anxiety. 
+
+--
 
 Related to the cyclical trend, found that there was firework identifed as one of the top features to skew towards r/PTSD. Found that most post on fireworks were on July, all coming from r/PTSD expressing agony and complaing about triggers about shooting and rockets. In fact, people with `past trauma` realated to sound are impacted significantly worse by `loud explosion` causing them to `reminisce the threat` and may their brain's threat detectos activated.<sup>3</sup>
 Linking back to the EDA, found that we see spike on July 2021, there is seasonal fireworks on every 4th July across many states in US. <sup>=4</sup>
 
-![image](https://user-images.githubusercontent.com/98629542/161172606-da4de7e9-d23f-4d1f-a132-9904088eda4c.png)
+![image](https://user-images.githubusercontent.com/98629542/161173353-49ed4f2e-9ae0-4fed-8130-38e7a1fb3610.png)
+
+--
 
 Found users common in both subreddit groups. Removed them after EDA found that some were misclassified wrongly because they were likely to be in wrong post based on the words and context they have used. Also because of the ambiguity, its best to remove since there is no clear indication which group they belong to.
 
