@@ -79,12 +79,18 @@ From r/Anxiety, common words like `panic` and `attack` are common symtoms from p
 Related to the cyclical trend, found that there was firework identifed as one of the top features to skew towards r/PTSD. Found that most post on fireworks were on July, all coming from r/PTSD expressing agony and complaing about triggers about shooting and rockets.<sup>3</sup>
 Linking back to the EDA, found that we see spike on July 2021, there is seasonal fireworks on every 4th July across many states in US. <sup>=4</sup>
 
+![image](https://user-images.githubusercontent.com/98629542/161172606-da4de7e9-d23f-4d1f-a132-9904088eda4c.png)
+
+
 Found users common in both subreddit groups. Removed them after EDA found that some were misclassified wrongly because they were likely to be in wrong post based on the words and context they have used. Also because of the ambiguity, its best to remove since there is no clear indication which group they belong to.
+
+![image](https://user-images.githubusercontent.com/98629542/161172631-6c1426a6-e408-4eec-8cc8-6716141bc802.png)
 
 After refining data, ROC_AUC and accuracy increased by 3.5% and 6% respectively.
 
 Logistic regression has the highest ROC_AUC and Accuracy score. 
 
+![image](https://user-images.githubusercontent.com/98629542/161172653-ccb20343-649f-4600-9ec8-6ffc81b0a4ab.png)
 
 **Citations**
 <br>
