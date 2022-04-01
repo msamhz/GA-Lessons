@@ -2,9 +2,11 @@
 
 Journal 1: ImportingData_Reddit
 
-Journal 2: EDA and Cleanup
+Journal 2: Import_New_Test_data
 
-Journal 3: Classification Modelling
+Journal 3: EDA and Cleanup
+
+Journal 4: Classification Modelling
 
 --
 
