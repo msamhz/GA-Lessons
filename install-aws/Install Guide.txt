@@ -1,0 +1,35 @@
+Create Instance 
+
+https://git.generalassemb.ly/dsi-sg/DSI-SG-27/tree/master/install-aws
+
+Git bash --> CD into folder that contains keypair 
+
+Connect instance --> SSH Client --> Run chmod (chmod 400 dsi27.pem)
+
+Connect to SSH 
+ssh -i "dsi27.pem" ubuntu@ec2-34-221-198-130.us-west-2.compute.amazonaws.com 
+
+ENTER 
+
+yes 
+
+ENTER
+
+~Installed Anaconda Package~ 
+
+Do you wish the installer to initialize Anaconda3
+by running conda init? [yes|no]
+[no] >>> TYPE `YES` AND ENTER
+
+How to activate anaconda 
+eval "$(/home/ubuntu/anaconda3/bin/conda shell.bash hook)"
+
+conda init 
+
+logout and login (should be able to see update)
+
+
+scp -i "dsi27.pem" ~/OneDrive/Desktop/7.07-lesson-intro-to-aws/model.py ubuntu@ec2-34-221-198-130.us-west-2.compute.amazonaws.com:~/dsi27
+
+
+scp -i "dsi27.pem" ubuntu@ec2-34-221-198-130.us-west-2.compute.amazonaws.com:~/dsi27/output.csv ~/OneDrive/Desktop/7.07-lesson-intro-to-aws
