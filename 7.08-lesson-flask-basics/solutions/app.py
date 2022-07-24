@@ -53,7 +53,7 @@ def make_predictions():
     ]).reshape(1, -1)
 
     # load in pickled model
-    model = pickle.load(open('assets/model.p', 'rb'))
+    model = pickle.load(open('../assets/model.p', 'rb'))
 
     # make predictions
     prediction = model.predict(data)[0]
@@ -64,11 +64,3 @@ def make_predictions():
 
 if __name__ == '__main__':
     app.run(debug=True)
-
-
-
-
-
-
-
-

@@ -6,7 +6,7 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.datasets import make_classification
 
 X, y = make_classification(
-    n_samples=ERROR,
+    n_samples=1,
     n_features=20,
     n_informative=20,
     n_redundant=0,
